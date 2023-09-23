@@ -2933,7 +2933,7 @@ class _SfCalendarState extends State<SfCalendar>
       _maxDate = null;
     }
 
-    if (!CalendarViewHelper.isDateCollectionEqual(
+    if (CalendarViewHelper.isDateCollectionEqual(
         widget.blackoutDates, _blackoutDates)) {
       _blackoutDates = CalendarViewHelper.cloneList(widget.blackoutDates);
     }
