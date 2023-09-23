@@ -1049,7 +1049,7 @@ class _MonthViewRenderObject extends CustomCalendarRenderObject {
               xPosition, yPosition - viewPadding, cellWidth, cellHeight),
           _linePainter);
 
-      if (calendarCellNotifier.value != null && !isBlackoutDate) {
+      if (calendarCellNotifier.value != null ) {
         _addMouseHovering(canvas, size, cellWidth, cellHeight, xPosition,
             yPosition - viewPadding);
       }
