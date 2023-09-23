@@ -9102,7 +9102,7 @@ class _SfCalendarState extends State<SfCalendar>
     if (_selectedDate != null) {
       currentSelectedDate = isDateWithInDateRange(
                   widget.minDate, widget.maxDate, _selectedDate) &&
-              !CalendarViewHelper.isDateInDateCollection(
+              CalendarViewHelper.isDateInDateCollection(
                   _blackoutDates, _selectedDate!)
           ? _selectedDate
           : null;
